@@ -1,0 +1,15 @@
+export enum RoutesEnum {
+  Home = '/',
+  Sale = '/sale',
+  New = '/new',
+  Cart = '/cart',
+  Account = '/account',
+  Favorites = '/favorites',
+  Stylia = '/stylia',
+  Divany = '/divany',
+  Kresla = '/kresla',
+  Krovaty = '/krovaty',
+  Matrasy = '/matrasy',
+  Stoly = '/Stoly',
+  Pufs = '/Pufs',
+}
