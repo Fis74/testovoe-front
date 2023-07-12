@@ -183,9 +183,11 @@ const ProductPage: NextPage = () => {
 
 export const getStaticPaths = async () => {
   const store = initStore()
-
   const result = await store.dispatch(getData.initiate())
-  const paths = result.data?.map((product) => `/product/${product.id}`)
+  const paths = result.data?.map((product) => ({
+    params: { id: product.id.toString() },
+  }))
+
   return {
     paths,
     fallback: false,
